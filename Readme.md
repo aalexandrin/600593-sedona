@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Антон Александрин](https://up.htmlacademy.ru/htmlcss/21/user/600593).
-* Наставник: Андрей Островский (https://htmlacademy.ru/profile/grandmaus).
+* Наставник: [Андрей Островский](https://up.htmlacademy.ru/htmlcss/21/user/198062).
 
 ---
 
