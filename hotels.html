@@ -5,17 +5,27 @@
     <title>Седона — Поиск гостиниц</title>
   </head>
   <body>
-  	<header>
-  		<img src="http://placehold.it/140x70" alt="City of Sedona">
-  		<nav class="main-nav">
-  			<ul>
-  				<li class="nav-item"><a href="#">Информация</a></li>
-  				<li class="nav-item"><a href="#">Фото и видео</a></li>
-  				<li class="nav-item"><a href="#">Карта штата</a></li>
-  				<li class="nav-item"><a href="hotels.html">Гостиницы</a></li>
-  			</ul>
-  		</nav>
-  	</header>
+  	<header class="page-header">
+        <a href="index.html">
+            <img src="http://placehold.it/140x70" alt="City of Sedona">
+        </a>
+        <nav class="main-nav">
+            <ul>
+                <li class="nav-item">
+                    <a href="#">Информация</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Фото и видео</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Карта штата</a>
+                </li>
+                <li class="nav-item">
+                    <a href="hotels.html">Гостиницы</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
   	<main>
   		<form class="hotel-search-form">
         <input type="submit" value="Найти">
@@ -23,7 +33,7 @@
       <section class="search-results">
         <div class="search-sort">
           <p class="search-sort-quantity">Найдено: 3</p>
-          <p class="search-sort-sorting">Сортировка</p>
+          <p class="sorting-options-title">Сортировка</p>
           <ul class="sorting-options">
             <li class="sorting-option active">По цене</li>
             <li class="sorting-option">По типу</li>
@@ -36,36 +46,44 @@
             <h2 class="hotel-card-name">Amara Resort & Spa</h2>
             <p class="hotel-card-type">Гостиница</p>
             <p class="hotel-card-price">От 4000 р.</p>
-            <a href="#" class="hotel-details">Подробнее</a>
-            <a href="#" class="hotel-book">Забронировать</a>
+            <a href="#" class="hotel-card-button">Подробнее</a>
+            <a href="#" class="hotel-card-button">Забронировать</a>
           </li>
           <li class="hotel-card">
             <img src="http://placehold.it/135x90" alt="Desert Quail Inn">
             <h2 class="hotel-card-name">Desert Quail Inn</h2>
             <p class="hotel-card-type">Мотель</p>
             <p class="hotel-card-price">От 3000 р.</p>
-            <a href="#" class="hotel-details">Подробнее</a>
-            <a href="#" class="hotel-book">Забронировать</a>
+            <a href="#" class="hotel-card-button">Подробнее</a>
+            <a href="#" class="hotel-card-button">Забронировать</a>
           </li>
           <li class="hotel-card">
             <img src="http://placehold.it/135x90" alt="Villas At Poco Diablo">
             <h2 class="hotel-card-name">Villas At Poco Diablo</h2>
             <p class="hotel-card-type">Апартаменты</p>
             <p class="hotel-card-price">От 2000 р.</p>
-            <a href="#" class="hotel-details">Подробнее</a>
-            <a href="#" class="hotel-book">Забронировать</a>
+            <a href="#" class="hotel-card-button">Подробнее</a>
+            <a href="#" class="hotel-card-button">Забронировать</a>
           </li>
         </ul>
       </section>
     </main>
-  	<footer>
-      <p class="footer-hashtag">#visitsedona</p>
-      <ul class="footer-social">
-        <li class="footer-social-button"><a href="https://twitter.com/" title="Twitter">Twitter</a></li>
-        <li class="footer-social-button"><a href="https://facebook.com/" title="Facebook">Facebook</a></li>
-        <li class="footer-social-button"><a href="https://youtube.com/" title="YouTube">YouTube</a></li>
-      </ul>
-      <p class="footer-copyright">Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/115x41" alt="htmlacademy"></a></p>
+  	<footer class="page-footer">
+        <p class="footer-hashtag">#visitsedona</p>
+        <ul class="footer-social">
+            <li class="footer-social-button">
+                <a href="https://twitter.com/" title="Twitter">Twitter</a>
+            </li>
+            <li class="footer-social-button">
+                <a href="https://facebook.com/" title="Facebook">Facebook</a>
+            </li>
+            <li class="footer-social-button">
+                <a href="https://youtube.com/" title="YouTube">YouTube</a>
+            </li>
+        </ul>
+        <p class="footer-copyright">Website by 
+            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/115x41" alt="htmlacademy"></a>
+        </p>
     </footer>
   </body>
 </html>
