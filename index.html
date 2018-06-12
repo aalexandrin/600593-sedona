@@ -78,10 +78,40 @@
 				<p class="hotel-search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 				<button class="hotel-search-button">Поиск гостиницы в Седоне</button>
 				<form class="hotel-search-form">
-					<input type="submit" value="Найти">
+					<p>
+						<label for="arrival-date-field">Дата заезда:</label>
+							<input type="text" id="arrival-date-field">
+					</p>
+					<p>
+						<label for="departure-date-field">Дата выезда:</label>
+							<input type="text" id="departure-date-field">
+					</p>
+					<p>
+						<label for="adults">Взрослые:</label>
+							<button class="plus-minus-button" type="button">
+								<span class="visually-hidden">Минус</span>
+								<img src="img/svg/minus.svg" alt="Минус">
+							</button>
+							<input type="text" id="adults">
+							<button class="plus-minus-button" type="button">
+								<span class="visually-hidden">Плюс</span>
+								<img src="img/svg/plus.svg" alt="Плюс">
+							</button>
+						<label for="children">Дети:</label>
+							<button class="plus-minus-button" type="button">
+								<span class="visually-hidden">Минус</span>
+								<img src="img/svg/minus.svg" alt="Минус">
+							</button>
+							<input type="text" id="children">
+							<button class="plus-minus-button" type="button">
+								<span class="visually-hidden">Плюс</span>
+								<img src="img/svg/plus.svg" alt="Плюс">
+							</button>
+					</p>
+					<button type="submit">Найти</button>
 				</form>
 				<div class="map">
-					<img src="img/map.jpg" alt="Карта">
+					<img src="img/map.jpg" alt="Карта Седоны">
 				</div>
 			</section>
 		</main>
