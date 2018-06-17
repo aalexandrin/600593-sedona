@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Седона — Поиск гостиниц</title>
-		<link rel="stylesheet" href="css/styles.css">
-		<link href="css/normalize.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
 		<header class="page-header">
@@ -53,9 +53,9 @@
 					<fieldset>
 						<legend>Стоимость в сутки (Р):</legend>
 						<label for="price-from">От</label>
-						<input type="text" id="price-from" name="price-from">
+						<input type="text" id="price-from" name="price-from" value="0">
 						<label for="price-to">До</label>
-						<input type="text" id="price-to" name="price-to">
+						<input type="text" id="price-to" name="price-to" value="3000">
 						<span class="double-slider">Double slider</span>
 					</fieldset>
 					<button type="submit" class="show-button">Показать</button>
@@ -80,7 +80,9 @@
 				<ul class="search-result-items">
 					<li class="hotel-card">
 						<img src="img/amara_resort.jpg" alt="Amara Resort & Spa">
-						<a href="#" class="hotel-card-name">Amara Resort & Spa</a>
+						<h2 class="hotel-card-name">
+							<a href="#">Amara Resort & Spa</a>
+						</h2>
 						<p class="hotel-card-type">Гостиница</p>
 						<p class="hotel-card-price">От 4000 р.</p>
 						<a href="#" class="hotel-card-button">Подробнее</a>
@@ -89,7 +91,9 @@
 					</li>
 					<li class="hotel-card">
 						<img src="img/Desert_Quail_Inn.jpg" alt="Desert Quail Inn">
-						<a href="#" class="hotel-card-name">Desert Quail Inn</a>
+						<h2 class="hotel-card-name">
+							<a href="#">Desert Quail Inn</a>
+						</h2>
 						<p class="hotel-card-type">Мотель</p>
 						<p class="hotel-card-price">От 3000 р.</p>
 						<a href="#" class="hotel-card-button">Подробнее</a>
@@ -98,7 +102,9 @@
 					</li>
 					<li class="hotel-card">
 						<img src="img/Villas_At_Poco_Diablo.jpg" alt="Villas At Poco Diablo">
-						<a href="#" class="hotel-card-name">Villas At Poco Diablo</a>
+						<h2 class="hotel-card-name">
+							<a href="#">Villas At Poco Diablo</a>
+						</h2>
 						<p class="hotel-card-type">Апартаменты</p>
 						<p class="hotel-card-price">От 2000 р.</p>
 						<a href="#" class="hotel-card-button">Подробнее</a>
