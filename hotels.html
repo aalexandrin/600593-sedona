@@ -7,24 +7,24 @@
 		<link href="css/normalize.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
-	<body>
+	<body class="container">
 		<header class="page-header">
 			<a href="index.html">
 				<img src="img/logo.png" alt="City of Sedona">
 			</a>
 			<nav class="main-nav">
 				<ul>
-					<li class="nav-item">
+					<li class="nav-item align-left">
 						<a href="#">Информация</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item align-left">
 						<a href="#">Фото и видео</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item align-right">
 						<a href="#">Карта штата</a>
 					</li>
-					<li class="nav-item current">
-						<a href="#">Гостиницы</a>
+					<li class="nav-item align-right current">
+						<a href="hotels.html">Гостиницы</a>
 					</li>
 				</ul>
 			</nav>
@@ -57,8 +57,9 @@
 						<label for="price-to">До</label>
 						<input type="text" id="price-to" name="price-to" value="3000">
 						<span class="double-slider">Double slider</span>
+						<button type="submit" class="show-button">Показать</button>
 					</fieldset>
-					<button type="submit" class="show-button">Показать</button>
+					
 				</form>
 			</div>
 			<section class="search-results">
@@ -76,6 +77,7 @@
 							<a href="#">По рейтингу</a>
 						</li>
 					</ul>
+					<p>Arrows</p>
 				</div>
 				<ul class="search-result-items">
 					<li class="hotel-card">
@@ -87,9 +89,9 @@
 						<p class="hotel-card-price">От 4000 р.</p>
 						<a href="#" class="hotel-card-button">Подробнее</a>
 						<a href="#" class="hotel-card-button">Забронировать</a>
-						<div class="four-stars">
+						<p class="stars four-stars">
 							<span class="visually-hidden">Количество звёзд: 4</span>
-						</div>
+						</p>
 						<p class="hotel-card-rating">Рейтинг: 8,5</p>
 					</li>
 					<li class="hotel-card">
@@ -101,9 +103,9 @@
 						<p class="hotel-card-price">От 3000 р.</p>
 						<a href="#" class="hotel-card-button">Подробнее</a>
 						<a href="#" class="hotel-card-button">Забронировать</a>
-						<div class="three-stars">
+						<p class="stars three-stars">
 							<span class="visually-hidden">Количество звёзд: 3</span>
-						</div>
+						</p>
 						<p class="hotel-card-rating">Рейтинг: 8,9</p>
 					</li>
 					<li class="hotel-card">
@@ -115,9 +117,9 @@
 						<p class="hotel-card-price">От 2000 р.</p>
 						<a href="#" class="hotel-card-button">Подробнее</a>
 						<a href="#" class="hotel-card-button">Забронировать</a>
-						<div class="two-stars">
+						<p class="stars two-stars">
 							<span class="visually-hidden">Количество звёзд: 2</span>
-						</div>
+						</p>
 						<p class="hotel-card-rating">Рейтинг: 9,2</p>
 					</li>
 				</ul>
