@@ -7,24 +7,24 @@
 		<link href="css/normalize.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
-	<body>
+	<body class="container">
 		<header class="page-header">
-			<a href="index.html">
-				<img src="img/logo.png" alt="City of Sedona">
+			<a href="index.html" class="logo">
+				<img src="img/logo.png" alt="City of Sedona" width="138" height="70">
 			</a>
 			<nav class="main-nav">
 				<ul>
-					<li class="nav-item">
+					<li class="nav-item align-left">
 						<a href="#">Информация</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item align-left">
 						<a href="#">Фото и видео</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item align-right">
 						<a href="#">Карта штата</a>
 					</li>
-					<li class="nav-item current">
-						<a href="#">Гостиницы</a>
+					<li class="nav-item align-right current">
+						<a href="hotels.html">Гостиницы</a>
 					</li>
 				</ul>
 			</nav>
@@ -57,8 +57,8 @@
 						<label for="price-to">До</label>
 						<input type="text" id="price-to" name="price-to" value="3000">
 						<span class="double-slider">Double slider</span>
+						<button type="submit" class="show-button">Показать</button>
 					</fieldset>
-					<button type="submit" class="show-button">Показать</button>
 				</form>
 			</div>
 			<section class="search-results">
@@ -76,49 +76,68 @@
 							<a href="#">По рейтингу</a>
 						</li>
 					</ul>
+					<p>Arrows</p>
 				</div>
 				<ul class="search-result-items">
 					<li class="hotel-card">
-						<img src="img/amara_resort.jpg" alt="Amara Resort & Spa">
-						<h2 class="hotel-card-name">
+						<div class="hotel-photo">
+							<img src="img/amara_resort.jpg" alt="Amara Resort & Spa" width="135" height="90">
+						</div>
+						<div class="hotel-info">
+							<h2 class="hotel-card-name">
 							<a href="#">Amara Resort & Spa</a>
-						</h2>
-						<p class="hotel-card-type">Гостиница</p>
-						<p class="hotel-card-price">От 4000 р.</p>
-						<a href="#" class="hotel-card-button">Подробнее</a>
-						<a href="#" class="hotel-card-button">Забронировать</a>
-						<div class="four-stars">
-							<span class="visually-hidden">Количество звёзд: 4</span>
+							</h2>
+							<p class="hotel-card-type">Гостиница</p>
+							<p class="hotel-card-price">От 4000 р.</p>
+							<a href="#" class="hotel-card-button">Подробнее</a>
+							<a href="#" class="hotel-card-button">Забронировать</a>
 						</div>
+						<div class="hotel-rating">
+							<p class="stars four-star">
+								<span class="visually-hidden">Количество звёзд: 4</span>
+							</p>
 						<p class="hotel-card-rating">Рейтинг: 8,5</p>
+						</div>
 					</li>
 					<li class="hotel-card">
-						<img src="img/Desert_Quail_Inn.jpg" alt="Desert Quail Inn">
-						<h2 class="hotel-card-name">
+						<div class="hotel-photo">
+							<img src="img/Desert_Quail_Inn.jpg" alt="Desert Quail Inn" width="135" height="90">
+						</div>
+						<div class="hotel-info">
+							<h2 class="hotel-card-name">
 							<a href="#">Desert Quail Inn</a>
-						</h2>
-						<p class="hotel-card-type">Мотель</p>
-						<p class="hotel-card-price">От 3000 р.</p>
-						<a href="#" class="hotel-card-button">Подробнее</a>
-						<a href="#" class="hotel-card-button">Забронировать</a>
-						<div class="three-stars">
-							<span class="visually-hidden">Количество звёзд: 3</span>
+							</h2>
+							<p class="hotel-card-type">Мотель</p>
+							<p class="hotel-card-price">От 3000 р.</p>
+							<a href="#" class="hotel-card-button">Подробнее</a>
+							<a href="#" class="hotel-card-button">Забронировать</a>
 						</div>
-						<p class="hotel-card-rating">Рейтинг: 8,9</p>
+						<div class="hotel-rating">
+							<p class="stars three-star">
+								<span class="visually-hidden">Количество звёзд: 3</span>
+							</p>
+							<p class="hotel-card-rating">Рейтинг: 8,9</p>
+						</div>
 					</li>
 					<li class="hotel-card">
-						<img src="img/Villas_At_Poco_Diablo.jpg" alt="Villas At Poco Diablo">
-						<h2 class="hotel-card-name">
-							<a href="#">Villas At Poco Diablo</a>
-						</h2>
-						<p class="hotel-card-type">Апартаменты</p>
-						<p class="hotel-card-price">От 2000 р.</p>
-						<a href="#" class="hotel-card-button">Подробнее</a>
-						<a href="#" class="hotel-card-button">Забронировать</a>
-						<div class="two-stars">
-							<span class="visually-hidden">Количество звёзд: 2</span>
+						<div class="hotel-photo">
+							<img src="img/Villas_At_Poco_Diablo.jpg" alt="Villas At Poco Diablo" width="135" height="90">
 						</div>
-						<p class="hotel-card-rating">Рейтинг: 9,2</p>
+						<div class="hotel-info">
+							<h2 class="hotel-card-name">
+								<a href="#">Villas At Poco Diablo</a>
+							</h2>
+							<p class="hotel-card-type">Апартаменты</p>
+							<p class="hotel-card-price">От 2000 р.</p>
+							<a href="#" class="hotel-card-button">Подробнее</a>
+							<a href="#" class="hotel-card-button">Забронировать</a>
+						</div>
+						<div class="hotel-rating">
+							<p class="stars two-star">
+								<span class="visually-hidden">Количество звёзд: 2</span>
+							</p>
+							<p class="hotel-card-rating">Рейтинг: 9,2</p>
+						</div>
 					</li>
 				</ul>
 			</section>
