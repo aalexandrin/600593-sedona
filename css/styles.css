@@ -1,18 +1,21 @@
 body {
-	width: 1200px;
-		/*max-width: 1200px;
-		min-width: 768px;*/
-	margin: 0 auto;
-	padding: 0;
 	font-family: "PT Sans", Arial, sans-serif;
 	text-transform: uppercase;
 	font-size: 14px;
-	box-shadow: 0 0 50px 2px rgba(0, 0, 0, 0.2);
+	background-color: #f2f2f2;
 }
 
 a {
 	text-decoration: none;
 	color: #000000;	
+}
+
+.content-container {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #ffffff;
+	box-shadow: 0 0 50px 2px rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -29,6 +32,7 @@ a {
 
 .logo {
 	position: absolute;
+	z-index: 1;
 	top: 0;
 	left: 50%;
 	transform: translateX(-50%);
@@ -52,16 +56,15 @@ a {
 }
 
 .nav-item {
-	flex-grow: 1;
+	flex-basis: 240px;
+	flex-grow: 0;
 	font-weight: bold;
 	line-height: 26px;
 	color: #000000;
 }
 
-.nav-item:first-child,
-.nav-item:last-child {
-	flex-basis: 240px;
-	flex-grow: 0;
+.nav-item:nth-child(2) {
+	margin-right: auto;
 }
 
 .align-left {
@@ -98,6 +101,7 @@ a {
 	background-image: url("../img/background_photo.jpg");
 	background-position: center -56px;
 	background-repeat: no-repeat;
+	clip-path: polygon(0 0, 1200px 0, 1200px 450px, 950px 475px, 950px 450px, 600px 508px, 250px 450px, 250px 475px, 0 450px);
 }
 
 .advantages {
@@ -282,9 +286,14 @@ a {
 .offering-search-form .numbers {
 	display: flex;
 	align-items: center;
-		position: relative;
+	position: relative;
 	margin: 0;
 	margin-bottom: 28px;
+}
+
+.offering-search-form .numbers {
+	justify-content: left;
+	margin-bottom: 53px
 }
 
 .offering-search-form label {
@@ -303,34 +312,26 @@ a {
 
 .date-field {
 	flex-grow: 1;
-	position: relative;
 }
 
-.calendar {
-	position: relative;
-}
-
-.calendar svg {
+.calendar-icon {
+	display: block;
 	position: absolute;
 	width: 21px;
 	height: 22px;
 	right: 10px;
 }
 
-.calendar svg path {
+.calendar-icon svg path {
 	fill: #cacaca;
 }
 
-.calendar svg:hover path {
+.calendar-icon:hover svg path {
 	fill: #000000;
 }
 
-.calendar svg:active path {
+.calendar-icon:active svg path {
 	fill: #81b3d2;
-}
-
-.numbers {
-	justify-content: left;
 }
 
 .numbers label:last-of-type {
@@ -370,13 +371,13 @@ a {
 	stroke: #000000;
 }
 
-.plus-minus-button:active {
+.plus-minus-button:active line {
 	stroke: #81b3d2;
 }
 
 .find-button {
 	width: 100%;
-	margin-top: 24px;
+	margin-top: 0;
 	margin-bottom: 55px;
 	padding: 16px 0;
 	font-weight: bold;
@@ -545,6 +546,7 @@ a {
 }
 
 .daily-price-field legend {
+	padding-left: 8px;
 	margin-bottom: 10px;
 }
 
@@ -563,7 +565,6 @@ a {
 .checkbox-container {
 	display: flex;
 	flex-direction: column;
-	overflow: hidden;
 }
 
 .daily-price-container {
@@ -578,6 +579,10 @@ a {
 	flex-basis: 23px;
 	margin-left: -16px;
 	margin-bottom: 23px;
+}
+
+.checkbox-row:last-child {
+	margin-bottom: 0;
 }
 
 .checkbox-field label {
@@ -604,6 +609,10 @@ a {
 	outline: rgb(59, 153, 252) auto 5px;
 }
 
+.checkbox-field input[type="checkbox"]:disabled + label::before {
+	opacity: 0.3;
+}
+
 .price-controls {
 	display: flex;
 	position: relative;
@@ -614,7 +623,6 @@ a {
 }
 
 .price-controls label {
-
 	text-align: right;
 	font-size: 14px;
 	line-height: 32px;
