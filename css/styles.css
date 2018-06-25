@@ -21,9 +21,10 @@ a {
 .visually-hidden {
 	position: absolute;
 	clip: rect(0 0 0 0);
-	width: 1px;
-	height: 1px;
+	width: 0px;
+	height: 0px;
 	margin: -1px;
+	overflow: hidden;
 }
 
 .page-header {
@@ -320,7 +321,11 @@ a {
 	width: 21px;
 	height: 22px;
 	right: 10px;
+	padding: 0;
+	background-color: transparent;
+	border: none;
 }
+
 
 .calendar-icon svg path {
 	fill: #cacaca;
@@ -565,6 +570,7 @@ a {
 .checkbox-container {
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
 }
 
 .daily-price-container {
