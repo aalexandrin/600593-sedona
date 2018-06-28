@@ -48,7 +48,6 @@ a {
 
 .main-nav ul {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 	margin: 0;
@@ -723,6 +722,7 @@ a {
 	line-height: 21px;
 	text-transform: inherit;
 	color: #ffffff;
+	text-transform: inherit;
 	background-color: transparent;
 	border: 2px solid #ffffff;
 	border-radius: 2px
