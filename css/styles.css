@@ -1,7 +1,7 @@
 body {
 	font-family: "PT Sans", Arial, sans-serif;
-	font-size: 14px;
 	text-transform: uppercase;
+	font-size: 14px;
 	background-color: #f2f2f2;
 }
 
@@ -294,6 +294,7 @@ a {
 
 .offering-search-form .numbers {
 	justify-content: left;
+	margin-bottom: 53px
 }
 
 .offering-search-form label {
@@ -302,21 +303,12 @@ a {
 }
 
 .offering-search-form input {
-	box-sizing: border-box;
-	height: 40px;
+	height: 38px;
 	padding-left: 11px;
 	font: inherit;
 	text-transform: inherit;
 	background-color: transparent;
 	border: none;
-}
-
-.offering-search-form input:hover {
-	background-color: #ebebeb;
-}
-
-.offering-search-form input:focus {
-	border: 2px solid #e5e5e5;
 }
 
 .date-field {
@@ -364,6 +356,15 @@ a {
 	width: 35px;
 }
 
+.offering-search-form input:hover {
+	background-color: #ebebeb;
+}
+
+.offering-search-form input:focus {
+	/*border: 2px solid #e5e5e5;
+		height: 34px;*/
+}
+
 .plus-minus-button {
 	padding: 12px 14px;
 	background-color: transparent;
@@ -381,7 +382,7 @@ a {
 
 .find-button {
 	width: 100%;
-	margin-top: 25px;
+	margin-top: 0;
 	margin-bottom: 55px;
 	padding: 16px 0;
 	font-weight: bold;
@@ -611,8 +612,7 @@ a {
 }
 
 .checkbox-field input[type="checkbox"]:focus + label::before {
-	/*outline: rgb(59, 153, 252) auto 5px;*/
-	outline: 5px auto -webkit-focus-ring-color;
+	outline: rgb(59, 153, 252) auto 5px;
 }
 
 .checkbox-field input[type="checkbox"]:disabled + label::before {
