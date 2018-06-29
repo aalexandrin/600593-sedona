@@ -2,6 +2,7 @@ body {
 	font-family: "PT Sans", Arial, sans-serif;
 	text-transform: uppercase;
 	font-size: 14px;
+	font-kerning: none;
 	background-color: #f2f2f2;
 }
 
@@ -266,23 +267,39 @@ a {
 }
 
 /*----------form----------*/
-.offering-form-container {
+.form-positioning-container {
 	position: relative;
 	width: 567px;
 	margin: 0 auto;
 }
 
+.offering-form-container {
+	position: absolute;
+	padding: 0 50px 50px 50px;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+	overflow: hidden;
+}
+
 .offering-search-form {
 	width: 457px;
-	position: absolute;
-	margin: 0 auto;
-	padding: 53px 55px 0;
+	padding: 55px 55px 0;
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 26px;
 	text-align: left;
 	background-color: #ffffff;
 	box-shadow: 0 0 50px 2px rgba(0, 0, 0, 0.2);
+}
+
+.offering-form-invisible {
+	transform: translateY(-110%);
+	transition-duration: 0.3s;
+}
+
+.offering-form-visible {
+	transform: translateY(0);
 }
 
 .offering-search-form .arrival,
@@ -292,7 +309,7 @@ a {
 	align-items: center;
 	position: relative;
 	margin: 0;
-	margin-bottom: 28px;
+	margin-bottom: 29px;
 }
 
 .offering-search-form .numbers {
@@ -943,7 +960,7 @@ a {
 .hotel-card-rating {
 	margin-top: auto;
 	margin-bottom: 0;
-	padding: 5px 12px;
+	padding: 3px 12px;
 	font-size: 14px;
 	line-height: 21px;
 	color: #666666;
