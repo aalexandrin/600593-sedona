@@ -80,6 +80,7 @@ a {
 
 .nav-item a {
 	color: inherit;
+	transition-duration: 0.3s;
 }
 
 .nav-item a:hover,
@@ -254,6 +255,7 @@ a {
 	line-height: 26px;
 	color: #ffffff;
 	background-color: #766357;
+	transition-duration: 0.3s;
 }
 
 .hotel-search-button:hover,
@@ -267,39 +269,41 @@ a {
 }
 
 /*----------form----------*/
-.form-positioning-container {
+.map {
 	position: relative;
-	width: 567px;
-	margin: 0 auto;
+	width: 1200px;
+	height: 593px;
+	overflow: hidden;
 }
 
 .offering-form-container {
 	position: absolute;
-	padding: 0 50px 50px 50px;
-	left: 50%;
+	width: 567px;
 	top: 0;
-	transform: translateX(-50%);
-	overflow: hidden;
+	left: 50%;
+	transform: translate(-50%, 0);
+	box-shadow: 0 0 50px 2px rgba(0, 0, 0, 0.2);
+	/*overflow: hidden;*/
 }
 
 .offering-search-form {
-	width: 457px;
+	/*width: 100%;*/
 	padding: 55px 55px 0;
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 26px;
 	text-align: left;
 	background-color: #ffffff;
-	box-shadow: 0 0 50px 2px rgba(0, 0, 0, 0.2);
+
 }
 
 .offering-form-invisible {
-	transform: translateY(-110%);
+	transform: translate(-50%, -110%);
 	transition-duration: 0.3s;
 }
 
 .offering-form-visible {
-	transform: translateY(0);
+	transform: translate(-50%, 0);
 }
 
 .offering-search-form .arrival,
@@ -330,6 +334,7 @@ a {
 	text-transform: inherit;
 	background-color: transparent;
 	border: 2px solid transparent;
+	transition-duration: 0.3s;
 }
 
 .offering-search-form input:hover {
@@ -355,6 +360,7 @@ a {
 
 .calendar-icon-btn svg path {
 	fill: #cacaca;
+	transition-duration: 0.3s;
 }
 
 .calendar-icon-btn:hover svg path,
@@ -387,6 +393,11 @@ a {
 	padding: 12px 14px;
 	background-color: transparent;
 	border: none;
+	transition-duration: 0.3s;
+}
+
+.plus-minus-button line {
+	transition-duration: 0.3s;
 }
 
 .plus-minus-button:hover line,
@@ -411,6 +422,7 @@ a {
 	color: #ffffff;
 	background-color: #81b3d2;
 	border: none;
+	transition-duration: 0.3s;
 }
 
 .find-button:hover,
@@ -423,18 +435,21 @@ a {
 	background-color: #5496bd;
 }
 
-.map {
-	width: 1200px;
-	height: 473px;
-	overflow: hidden;
-}
-
 /*-----------footer----------*/
+
 .page-footer {
+	width: 1200px;
 	display: flex;
 	align-items: center;
 	height: 10px;
 	min-height: 120px;
+	background-color: #ffffff;
+}
+
+.index-footer {
+	position: absolute;
+	transform: translateY(-100%);
+	opacity: 0.9;
 }
 
 .footer-hashtag {
@@ -463,6 +478,7 @@ a {
 	width: 46px;
 	height: 48px;
 	background-color: #81b3d2;
+	transition-duration: 0.3s;
 }
 
 .footer-social-button a::before {
@@ -472,6 +488,7 @@ a {
 	height: 100%;
 	background-position: center center;
 	background-repeat: no-repeat;
+	transition-duration: 0.3s;
 }
 
 .twitter a::before {
@@ -518,6 +535,9 @@ a {
 	width: 115px;
 	height: 39px;
 	fill: #231f20;
+}
+.footer-copyright svg {
+	transition-duration: 0.3s;
 }
 
 .footer-copyright svg:hover,
@@ -629,7 +649,6 @@ a {
 	background-image: url(../img/svg/checkbox-off.svg);
 	background-position: left center;
 	background-repeat: no-repeat;
-
 }
 
 .checkbox-field input[type="checkbox"]:checked + label::before {
@@ -726,6 +745,7 @@ a {
 	border-radius: 50%;
 	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 	cursor: pointer;
+	transition-duration: 0.3s;
 }
 
 .range-toggle:hover {
@@ -751,7 +771,8 @@ a {
 	text-transform: inherit;
 	background-color: transparent;
 	border: 2px solid #ffffff;
-	border-radius: 2px
+	border-radius: 2px;
+	transition-duration: 0.3s;
 }
 
 .show-button:hover,
@@ -802,6 +823,7 @@ a {
 .sorting-option a {
 	color: rgba(0, 0, 0, 0.3);
 	border-bottom: 1px dotted #81b3d2;
+	transition-duration: 0.3s;
 }
 
 .sorting-option a:hover,
@@ -828,6 +850,7 @@ a {
 
 .arrow path {
 	fill: #cacaca;
+	transition-duration: 0.3s;
 }
 
 .arrow:not([href]) {
@@ -892,6 +915,10 @@ a {
 	line-height: 26px;
 }
 
+.hotel-card-name a {
+	transition-duration: 0.3s;
+}
+
 .hotel-card-name a:hover,
 .hotel-card-name a:focus {
 	color: #81b3d2;
@@ -931,6 +958,7 @@ a {
 	line-height: 21px;
 	color: #ffffff;
 	background-color: #81b3d2;
+	transition-duration: 0.3s;
 }
 
 .hotel-card-button:hover,
