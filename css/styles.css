@@ -280,16 +280,15 @@ a {
 
 .offering-form-container {
 	position: absolute;
+	z-index: 1;
 	width: 567px;
 	top: 0;
 	left: 50%;
 	transform: translate(-50%, 0);
 	box-shadow: 0 0 50px 2px rgba(0, 0, 0, 0.2);
-	/*overflow: hidden;*/
 }
 
 .offering-search-form {
-	/*width: 100%;*/
 	padding: 55px 55px 0;
 	font-weight: bold;
 	font-size: 14px;
@@ -441,7 +440,6 @@ a {
 .page-footer {
 	display: flex;
 	align-items: center;
-	/*height: 100%;*/
 	width: 100%;
 	min-height: 120px;
 	background-color: #ffffff;
@@ -449,17 +447,16 @@ a {
 
 .index-footer {
 	position: absolute;
+	left: 0;
 	bottom: 0;
-	opacity: 0.9;
+	background-color: rgba(255, 255, 255, 0.9)
 }
 
 .footer-column {
 	box-sizing: border-box;
 	min-height: 120px;
 	flex-basis: 400px;
-	align-items: center;
 	flex-grow: 0;
-
 }
 
 .hashtag-column {
@@ -476,12 +473,10 @@ a {
 
 .footer-hashtag {
 	margin: 0;
-	/*height: 100%;*/
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 26px;
 	text-align: center;
-	overflow: hidden;
 }
 
 .footer-social {
@@ -656,7 +651,7 @@ a {
 	display: inline-block;
 	position: relative;
 	padding: 2px;
-	padding-left: 47px;
+	padding-left: 43px;
 }
 
 .checkbox-field label::before {
