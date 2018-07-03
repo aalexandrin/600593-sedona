@@ -5,13 +5,12 @@
 		<title>Седона</title>
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
-		<link rel="stylesheet" href="css/styles.css">
+		<link href="css/styles.min.css" rel="stylesheet">
 	</head>
 	<body>
 		<div class="content-container">
 			<header class="page-header">
 				<a class="logo">
-					<span class="visually-hidden">Город Седона</span>
 					<img src="img/logo.png" alt="City of Sedona" width="138" height="70">
 				</a>
 				<nav class="main-nav">
@@ -83,7 +82,7 @@
 				<section class="hotel-offering-search">
 					<h2 class="hotel-search-caption">Заинтересовались?</h2>
 					<p class="hotel-search-text">Укажите предполагаемые даты поездки,<br>и&nbsp;мы&nbsp;покажем&nbsp;вам лучшие предложения гостиниц в Седоне</p>
-					<a href="#" class="hotel-search-button">Поиск гостиницы в Седоне</a>
+					<a href="search-form.html" class="hotel-search-button">Поиск гостиницы в Седоне</a>
 					<div class="map">
 						<div class="offering-form-container">
 							<form class="offering-search-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -130,6 +129,7 @@
 									<label for="children">Дети:</label>
 									<span class="number-field-container">
 										<button class="plus-minus-button" type="button">
+											<span class="visually-hidden">Минус</span>
 											<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
 												<line x1="0" y1="5" x2="10" y2="5" stroke-width="3" stroke="#a9a9a9"/>
 											</svg>
@@ -147,7 +147,6 @@
 								<button type="submit" class="find-button">Найти</button>
 							</form>
 						</div>
-						<!-- <img src="img/map.jpg" alt="Карта Седоны" width="1200" height="593"> -->
 						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d248809.88014708742!2d-111.86888152898504!3d34.978793358184014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1529952063803" width="1200" height="593" style="border:0" allowfullscreen></iframe>
 					</div>
 				</section>
@@ -156,25 +155,23 @@
 				<div class="footer-column hashtag-column">
 					<p class="footer-hashtag">#visitsedona</p>
 				</div>
-				<div class="footer-column social-column">
-					<ul class="footer-social">
-						<li class="footer-social-button twitter">
-							<a href="https://twitter.com/" title="Twitter">
-								<span class="visually-hidden">Twitter</span>
-							</a>
-						</li>
-						<li class="footer-social-button facebook">
-							<a href="https://facebook.com/" title="Facebook">
-								<span class="visually-hidden">Facebook</span>
-							</a>
-						</li>
-						<li class="footer-social-button youtube">
-							<a href="https://youtube.com/" title="YouTube">
-								<span class="visually-hidden">YouTube</span>
-							</a>
-						</li>
-					</ul>
-				</div>
+				<ul class="footer-column footer-social">
+					<li class="footer-social-button twitter">
+						<a href="https://twitter.com/" title="Twitter">
+							<span class="visually-hidden">Twitter</span>
+						</a>
+					</li>
+					<li class="footer-social-button facebook">
+						<a href="https://facebook.com/" title="Facebook">
+							<span class="visually-hidden">Facebook</span>
+						</a>
+					</li>
+					<li class="footer-social-button youtube">
+						<a href="https://youtube.com/" title="YouTube">
+							<span class="visually-hidden">YouTube</span>
+						</a>
+					</li>
+				</ul>
 				<div class="footer-column copyright-column">
 					<p class="footer-copyright">Website by
 						<a href="https://htmlacademy.ru/intensive/htmlcss">
@@ -188,6 +185,6 @@
 				</div>
 			</footer>
 		</div>
-		<script src="js/script.js"></script>
+		<script src="js/script.min.js"></script>
 	</body>
 </html>

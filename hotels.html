@@ -2,16 +2,15 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<title>Седона — Поиск гостиниц</title>
+		<title>Седона — поиск гостиниц</title>
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
-		<link rel="stylesheet" href="css/styles.css">
+		<link href="css/styles.min.css" rel="stylesheet">
 	</head>
 	<body>
 		<div class="content-container">
 			<header class="page-header">
 				<a href="index.html" class="logo">
-					<span class="visually-hidden">Город Седона</span>
 					<img src="img/logo.png" alt="City of Sedona" width="138" height="70">
 				</a>
 				<nav class="main-nav">
@@ -65,7 +64,6 @@
 								<span class="checkbox-row">
 									<input type="checkbox" id="apartment" name="apartment" value="apartment" checked>
 									<label for="apartment">Апартаменты</label>
-								</span>
 							</div>
 						</fieldset>
 						<fieldset class="daily-price-field">
@@ -110,12 +108,14 @@
 							</li>
 						</ul>
 						<p class="sorting-arrows">
-							<a class="arrow" href="#">
+							<a class="arrow" href="#" title="По убыванию">
+								<span class="visually-hidden">По убыванию</span>
 								<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
 									<path fill="#231F20" d="M5.5 0L0 10h11z"/>
 								</svg>
 							</a>
-							<a class="arrow">
+							<a class="arrow" title="По возрастанию">
+								<span class="visually-hidden">По возрастанию</span>
 								<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
 									<path fill="#231F20" d="M5.5 10L0 0h11"/>
 								</svg>

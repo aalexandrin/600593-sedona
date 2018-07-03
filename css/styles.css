@@ -109,10 +109,6 @@ a {
 	background-repeat: no-repeat;
 }
 
-.intro {
-}
-
-
 .advantages {
 	margin: 0;
 	margin-bottom: 50px;
@@ -271,6 +267,7 @@ a {
 }
 
 /*----------form----------*/
+
 .map {
 	position: relative;
 	width: 100%;
@@ -358,17 +355,17 @@ a {
 	border: none;
 }
 
-.calendar-icon-btn svg path {
+.calendar-icon-btn path {
 	fill: #cacaca;
 	transition-duration: 0.3s;
 }
 
-.calendar-icon-btn:hover svg path,
-.calendar-icon-btn:focus svg path {
+.calendar-icon-btn:hover path,
+.calendar-icon-btn:focus path {
 	fill: #000000;
 }
 
-.calendar-icon-btn:active svg path {
+.calendar-icon-btn:active path {
 	fill: #81b3d2;
 }
 
@@ -383,7 +380,7 @@ a {
 	align-items: baseline;
 }
 
-.offering-search-form input.number-field {
+.offering-search-form .number-field {
 	padding: 0;
 	text-align: center;
 	width: 35px;
@@ -463,10 +460,6 @@ a {
 	padding: 46px 0;
 }
 
-.social-column {
-	padding: 33px 0;
-}
-
 .copyright-column {
 	padding: 39px 0;
 }
@@ -485,7 +478,7 @@ a {
 	align-items: center;
 	flex-wrap: wrap;
 	margin: 0;
-	padding: 0;
+	padding: 33px 0;
 	list-style: none;
 }
 
@@ -567,13 +560,11 @@ a {
 
 /*----------hotels----------*/
 
-.hotel-search-container {
-}
-
 .hotel-search-form {
 	display: flex;
-	padding: 27px 71px 0;
-	min-height: 190px;
+	box-sizing: border-box;
+	padding: 27px 71px 22px;
+	min-height: 217px;
 	color: #ffffff;
 	background-color: #9aa2a9;
 	background-image: url("../img/filter_background.jpg");
@@ -590,7 +581,6 @@ a {
 
 .checkbox-field {
 	flex-basis: 256px;
-	/*padding-left: 2px;*/
 }
 
 .daily-price-field {
@@ -652,6 +642,7 @@ a {
 	position: relative;
 	padding: 2px;
 	padding-left: 43px;
+	vertical-align: baseline;
 }
 
 .checkbox-field label::before {
@@ -730,6 +721,7 @@ a {
 	width: 50px;
 	margin: 0;
 	padding-left: 5px;
+	vertical-align: baseline;
 	background: none;
 	border: none;
 }
@@ -862,6 +854,7 @@ a {
 .arrow {
 	display: inline-block;
 	margin-left: 9px;
+	vertical-align: baseline;
 }
 
 .arrow path {
@@ -949,6 +942,7 @@ a {
 	display: inline-block;
 	margin: 0;
 	margin-bottom: 14px;
+	vertical-align: baseline;
 	font-size: 14px;
 	line-height: 21px;
 }
@@ -969,6 +963,7 @@ a {
 	display: inline-block;
 	margin-right: 2px;
 	padding: 3px 17px;
+	vertical-align: baseline;
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 21px;
