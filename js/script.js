@@ -13,7 +13,7 @@ if (storedAdults) {
 if (storedChildren) {
 	childrenNumber.value = storedChildren;
 }
-
+form.classList.add('offering-form-visible');
 hotelSearchButton.addEventListener('click', function (evt) {
 	evt.preventDefault();
 	form.classList.toggle('offering-form-visible');
