@@ -8,7 +8,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: #000000;	
+	color: #000000;
 }
 
 .content-container {
@@ -170,14 +170,14 @@ a {
 	line-height: 21px;
 }
 
-.advantage-text {	
+.advantage-text {
 	margin-top: 21px;
 	padding: 0 48px;
 	font-size: 14px;
 	line-height: 21px;
 }
 
-.town-features {	
+.town-features {
 	display: flex;
 	justify-content: space-between;
 	flex-basis: 100%;
@@ -229,13 +229,13 @@ a {
 	text-align: center;
 }
 
-.hotel-search-caption {	
+.hotel-search-caption {
 	margin-bottom: 24px;
 	font-size: 30px;
 	line-height: 36px;
 }
 
-.hotel-search-text {	
+.hotel-search-text {
 	padding: 0 380px;
 	margin-bottom: 47px;
 	font-size: 14px;
@@ -317,7 +317,7 @@ a {
 }
 
 .offering-search-form input {
-	box-sizing: border-box; 
+	box-sizing: border-box;
 	height: 38px;
 	font: inherit;
 	text-transform: inherit;
@@ -452,7 +452,7 @@ a {
 	align-items: center;
 	width: 100%;
 	min-height: 120px;
-	background-color: #fefefe;	
+	background-color: #fefefe;
 }
 
 .index-footer {
@@ -660,7 +660,7 @@ a {
 	content: "";
 	position: absolute;
 	top: 50%;
-	left: 4px;	
+	left: 4px;
 	width: 27px;
 	height: 23px;
 	transform: translateY(-50%);
@@ -801,7 +801,7 @@ a {
 }
 
 .search-results {
-	background-color: #fefefe;	
+	background-color: #fefefe;
 }
 
 .search-sort {
